@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Kadosh Links é um agregador de links para usar como cartão de visitas online.
+O MM links é um agregador de links para usar como cartão de visitas online.
 
 ## :memo: Licença
 
