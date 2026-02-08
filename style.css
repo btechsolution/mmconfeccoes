@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 :root {
@@ -15,13 +15,14 @@
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-html, body {
-  height: 100%;
-  overflow: hidden;
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center / cover;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
@@ -29,8 +30,8 @@ body {
 #container {
   width: 100%;
   max-width: 360px;
-  margin: 56px auto 0;
-  padding: 0 16px;
+  margin: 0 auto;
+  padding: 24px 16px;
 }
 
 #profile {
@@ -51,13 +52,13 @@ body {
 
 #switch {
   position: relative;
-  width: 56px;
-  margin: 4px auto;
+  width: 64px;
+  margin: 12px auto;
 }
 
 #switch button {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
@@ -79,8 +80,8 @@ body {
 
 #switch span {
   display: block;
-  width: 56px;
-  height: 20px;
+  width: 64px;
+  height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
@@ -99,7 +100,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px;
+  padding: 14px 16px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
@@ -107,7 +108,7 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-color);
 }
 
@@ -120,7 +121,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   padding: 16px 0;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #social-links a {
@@ -141,9 +142,10 @@ footer {
   padding: 16px 0;
   text-align: center;
   font-size: 12px;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
+/* ===== DESKTOP ===== */
 @media (min-width: 768px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -151,7 +153,7 @@ footer {
 
   #container {
     max-width: 588px;
-    padding: 0 24px;
+    padding: 32px 24px;
   }
 
   #profile img {
@@ -163,17 +165,17 @@ footer {
   }
 
   #switch {
-    width: 64px;
+    width: 72px;
   }
 
   #switch button {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 
   #switch span {
-    width: 64px;
-    height: 24px;
+    width: 72px;
+    height: 28px;
   }
 
   ul {
@@ -194,10 +196,10 @@ footer {
   footer {
     padding: 24px 0;
     font-size: 14px;
-    color: var(--text-color)
   }
 }
 
+/* ===== ANIMAÇÕES ===== */
 @keyframes slide-in {
   from {
     left: 0;
